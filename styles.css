@@ -25,6 +25,7 @@ td {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    
 }
 
 tr {
@@ -33,6 +34,12 @@ tr {
 
 td {
     width: 20px;
+}
+
+/*Change the cursor when the user point it inside the canvas */
+
+td:hover {
+    cursor: pointer;
 }
 
 input[type=number] {
