@@ -1,11 +1,9 @@
 /*
  * Project Name: Pixel Art Maker Project
- * HTML and CSS credited to by Udacity
+ * HTML and CSS credited to Udacity
  */
 
-/*
- * Make a grid based on user's specified width and height
- */
+// Make a grid based on user's specified width and height
 const makeGrid = () => {
   // Your code goes here!
 
@@ -71,18 +69,20 @@ const changeBackground = (id) => {
 const formSubmit = (e) => {
   //  prevent from submitting the form
   e.preventDefault();
-
+  
+  // reset the grid to a blank state.
   clearTable();
 
-  //create a grid
+  //create a grid based on user's input height and width
   makeGrid();
 };
 
 // Select size input.
 const form = document.getElementById("sizePicker");
 
-/*
- * When size is submitted by the user, call makeGrid()
- */
-
+/* 
+* When size is submitted by the user, call formSubmit function
+* @param submit - name of the event
+* @param formSubmit - function to run when the submit event occurs.  
+*/
 form.addEventListener("submit", formSubmit);
