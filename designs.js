@@ -3,12 +3,16 @@
  * HTML and CSS credited to Udacity
  */
 
+
+const inputHeight = document.getElementById("inputHeight");
+const inputWidth = document.getElementById("inputWidth");
+
 // Make a grid based on user's specified width and height
 const makeGrid = () => {
   // Your code goes here!
 
-  let gridHeight = document.getElementById("inputHeight").value;
-  let gridWidth = document.getElementById("inputWidth").value;
+  const gridHeight = inputHeight.value;
+  const gridWidth = inputWidth.value;
 
   // Create table rows
   for (let tr = 0; tr < parseInt(gridHeight); tr++) {
